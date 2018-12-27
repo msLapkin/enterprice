@@ -16,5 +16,13 @@
     <!--<servlet-name>Main</servlet-name>-->
     <!--<url-pattern>/main</url-pattern>-->
   <!--</servlet-mapping>-->
+  <error-page>
+    <error-code>403</error-code>
+    <location>/WEB-INF/403.html</location>
+  </error-page>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/WEB-INF/403.html</location>
+  </error-page>
 </web-app>
 
