@@ -6,19 +6,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 @WebServlet(urlPatterns = {"/main"})
-public class Main extends HttpServlet{
-    String title = "Главная";
+public class MainServlet extends HttpServlet{
+//    String title = "Главная";
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //processRequest(request, response);
-        new Navigation(request,response,title);
+        request.getRequestDispatcher("Main.jsp").forward(request,response);
+//        new NavigationServlet(request,response,title);
     }
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException  {
-        //processRequest(request, response);
-        new Navigation(request,response,title);
-    }
+//    @Override
+//    protected void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException  {
+//        //processRequest(request, response);
+//        new NavigationServlet(request,response,title);
+//    }
 }

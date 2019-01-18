@@ -8,17 +8,17 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(urlPatterns = {"/order"})
-public class Order extends HttpServlet {
-    String title = "Заказ";
+public class OrderServlet extends HttpServlet {
+//    String title = "Заказ";
     @Override
     protected void doGet (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //processRequest(request, response);
-
-        new Navigation(request,response,title);
+        request.getRequestDispatcher("Order.jsp").forward(request,response);
+        //new NavigationServlet(request,response,title);
     }
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //processRequest(request, response);
-        new Navigation(request,response,title);
-    }
+//    @Override
+//    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//        //processRequest(request, response);
+//        new NavigationServlet(request,response,title);
+//    }
 }
