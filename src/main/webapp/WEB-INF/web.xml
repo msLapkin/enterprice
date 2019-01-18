@@ -9,11 +9,11 @@
          version="3.1">
   <display-name>JavaEE by Fursova</display-name>
   <!--<servlet>-->
-    <!--<servlet-name>Main</servlet-name>-->
-    <!--<servlet-class>ru.geekbrains.javaee.servlets.Main</servlet-class>-->
+    <!--<servlet-name>MainServlet</servlet-name>-->
+    <!--<servlet-class>ru.geekbrains.javaee.servlets.MainServletServlet</servlet-class>-->
   <!--</servlet>-->
   <!--<servlet-mapping>-->
-    <!--<servlet-name>Main</servlet-name>-->
+    <!--<servlet-name>MainServlet</servlet-name>-->
     <!--<url-pattern>/main</url-pattern>-->
   <!--</servlet-mapping>-->
   <error-page>
